@@ -17,7 +17,7 @@
                    <p></p>
                  </div>
                  <div class="card-action">
-                   <a href="#"Rechercher des CV</a>
+                   <a href="#">Les offres d'emploi</a>
                  </div>
                </div>
              </div>

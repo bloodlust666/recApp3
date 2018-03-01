@@ -45,10 +45,10 @@
    <div class="col s12 m4 l2">
        <!-- _____________________________SIDE BAR____________________________ -->
            <div class="collection ">
-              <a href="{{ url('espaceRecruteur') }}" class="collection-item active cyan darken-2">Accueil candidat</a>
-              <a href="" class="collection-item ">Créer mon CV</a>
-              <a href="{{ url('annonces/create') }}" class="collection-item"></a>
-              <a href="{{ url('annonces/') }}" class="collection-item"></a>
+              <a href="{{ url('espaceCandidat') }}" class="collection-item active cyan darken-2">Accueil candidat</a>
+              <a href="{{ url('cvs/create') }}" class="collection-item ">Créer mon CV</a>
+              <a href="#" class="collection-item"></a>
+              <a href="#" class="collection-item"></a>
            </div>
 
        <!-- _____________________________END SIDE BAR____________________________ -->

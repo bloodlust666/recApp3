@@ -25,9 +25,9 @@ Route::get('espaceRecruteur', function () {
 Route::post('cvs/', 'CvController@store');
 Route::get('cvs/create', 'CvController@create');
 
-Route::get('create', function () {
+/*Route::get('create', function () {
     return view('cv.create');
-});
+});*/
 
 
 //________________________________________  Admin Route _____________________________________//
