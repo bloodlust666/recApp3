@@ -49,6 +49,8 @@ Route::post('annonces/', 'AnnonceController@store')->middleware('EspaceRM:1');
 Route::get('annonces/{id}/edit', 'AnnonceController@edit')->middleware('EspaceRM:1');
 Route::put('annonces/{id}', 'AnnonceController@update')->middleware('EspaceRM:1');
 Route::delete('annonces/{id}', 'AnnonceController@destroy')->middleware('EspaceRM:1');
+Route::get('annonces/desactive', 'AnnonceController@desactive')->middleware('EspaceRM:1');
+Route::get('annonces/publier', 'AnnonceController@publier')->middleware('EspaceRM:1');
 
 // create entreprise
 Route::get('store-Entreprise', 'EntrepriseController@showEnrepriseForm')->name('recruteur.storeEntreprise')->middleware('EspaceRM:1');

@@ -24,7 +24,7 @@
       <div class="row col s12">
         <div class="input-field col s6">
           <input  id="titre_annonce" name="titre_annonce" type="text" class="validate">
-          <label for="first_name">Titre d'annonce</label>
+          <label for="titre_annonce">Titre d'annonce</label>
         </div>
       <!--<div class="row col s6">
          <label>Nom de l'entreprise </label><br>
@@ -40,14 +40,14 @@
       <div class="row">
         <div class="input-field col s12">
           <textarea id="description_poste" name="description_poste" class="materialize-textarea"></textarea>
-          <label for="textarea1">Description du poste</label>
+          <label for="description_poste">Description du poste</label>
         </div>
       </div>
       
       <div class="row">
         <div class="input-field col s12">
           <textarea id="description_profil" name="description_profil" class="materialize-textarea"></textarea>
-          <label for="textarea2">Description du profil</label>
+          <label for="description_profil">Description du profil</label>
         </div>
       </div>
     
@@ -77,8 +77,8 @@
                  <label for="bac+5">bac +5</label>
                </p>
                <p class="row col s2">
-                 <input name="niveau_etude" type="radio" id="bac+5Plus" value="bac+5Plus" />
-                 <label for="bac+5Plus">bac +5 et plus</label>
+                 <input name="niveau_etude" type="radio" id="bacPlus5Plus" value="bacPlus5Plus" />
+                 <label for="bacPlus5Plus">bac +5 et plus</label>
                </p>
           </div>
 
@@ -90,8 +90,8 @@
                  <label for="EtudiantejeuneDiplome">Etudiantèjeune_diplomé</label>
                </p>
                <p class="row col s2">
-                 <input name="niveau_experience" type="radio" id="Debutant<2ans" value="Debutant<2ans" />
-                 <label for="Debutant<2ans">Débutant<2ans</label>
+                 <input name="niveau_experience" type="radio" id="Debutant_2ans" value="Debutant_2ans" />
+                 <label for="Debutant_2ans">Débutant<2ans</label>
                </p>
                <p class="row col s2">
                  <input  name="niveau_experience" type="radio" id="Xp2ans5ans"  value="Xp2ans5ans" />
@@ -102,8 +102,8 @@
                  <label for="Xp5ans10ans">Xp_5ans_10ans</label>
                </p>
                <p class="row col s3">
-                 <input name="niveau_experience" type="radio" id="Xp>10ans" value="Xp>10ans" />
-                 <label for="Xp>10ans">Xp>10ans</label>
+                 <input name="niveau_experience" type="radio" id="Xp_10ans" value="Xp_10ans" />
+                 <label for="Xp_10ans">Xp>10ans</label>
                </p>
           </div>
   

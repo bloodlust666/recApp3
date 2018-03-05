@@ -53,12 +53,12 @@ class AnnonceController extends Controller
 
     }
     // permet  de modifier une annonce
-    public function update(Request $request,$id){
-
+    public function update(Request $request, $id){
+ 
         $annonce = Annonce::find($id);
 
         $annonce->titre_annonce = $request ->input('titre_annonce');
-        $annonce->description_poste = $request ->input('titre_annonce');
+        $annonce->description_poste = $request ->input('description_poste');
         $annonce->description_profil = $request ->input('description_profil');
         $annonce->emploi_base_ville = $request ->input('emploi_base_ville');
         $annonce->niveau_experience = $request ->input('niveau_experience');
@@ -71,7 +71,22 @@ class AnnonceController extends Controller
 
     }
     // permet  de supprimer une annonce
-    public function destroy(){
+    public function destroy(Request $request, $id){
+       $annonce = Annonce::find($id); 
+       $annonce->delete(); 
+        //return $request -> all();
+     return redirect ('annonces/');
 
     }
+public function desactive(){
+     $listAnnonces = Annonce::orderBy('id','desc')->paginate(5);
+        // return view ('annonce.index',['annonces' => $listAnnonces]);
+        return view ('annonce.desactive')->withAnnonces($listAnnonces);
+    }
+public function publier(){
+     $listAnnonces = Annonce::orderBy('id','desc')->paginate(5);
+        // return view ('annonce.index',['annonces' => $listAnnonces]);
+        return view ('annonce.publier')->withAnnonces($listAnnonces);
+    }
+
 }

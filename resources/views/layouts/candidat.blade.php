@@ -47,8 +47,8 @@
            <div class="collection ">
               <a href="{{ url('espaceCandidat') }}" class="collection-item active cyan darken-2">Accueil candidat</a>
               <a href="{{ url('cvs/create') }}" class="collection-item ">Créer mon CV</a>
-              <a href="#" class="collection-item"></a>
-              <a href="#" class="collection-item"></a>
+              <a href="" class="collection-item">Mes annonces</a>
+              <a href="" class="collection-item">Mes annonces</a>
            </div>
 
        <!-- _____________________________END SIDE BAR____________________________ -->
